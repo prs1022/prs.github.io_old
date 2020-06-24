@@ -451,16 +451,15 @@
     <div class="container">
         <div id="gitalk-container"></div>
         <script>
-            var gitalk = new Gitalk({
-                id: location.pathname,
-                clientID: 'a782c22c9db1dc03ce02',
-                clientSecret: '097b9db3761373cc651fa0f113d9efd89ba703f2',
-                repo: 'Notes',
-                owner: 'aopstudio',//github用户名
-                admin: ['aopstudio'],//github用户名
-                labels: ['gitment'],
-                perPage: 50,
-            })
+             const gitalk = new Gitalk({
+				clientID: '9a47c88d3b8845187eb2',
+				clientSecret: 'e1bafb57a55d02227cbea3129e5a63e4db30b2ae',
+				repo: 'prs1022',
+				owner: 'prs1022',
+				admin: ['prs1022'],
+				// facebook-like distraction free mode
+				distractionFreeMode: false
+			  })
             gitalk.render('gitalk-container')
         </script>
     </div>
