@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Cheng Yi's Homepage</title>
+    <title>SongRenPu Homepage</title>
 
     <!--缩略图引用-->
     <link href="https://img.hacpai.com/avatar/1544098952164?imageView2/1/w/242/h/242/interlace/0/q" rel="SHORTCUT ICON">
@@ -17,7 +17,7 @@
     <!--js引用-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.1.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <!-- <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> -->
     <script src="js/dayornight.js"></script>
     <script src="js/setdon.js"></script>
     <script>
@@ -73,7 +73,7 @@
                 </ul>
     
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="day" onclick="setDay(),showMessage('开灯学习啦', 5000, true);;">日间模式</a></li>
+                    <li><a id="day" onclick="setDay(),showMessage('开灯学习啦!', 5000, true);;">日间模式</a></li>
                     <li><a id="night" onclick="setNight(),showMessage('关了灯想干嘛呀？', 5000, true);">夜间模式</a></li>
                 </ul>
             </div>
@@ -94,13 +94,10 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="https://i.loli.net/2019/02/18/5c698dd59a288.jpg" alt="First slide">
+                        <img src="img/sh.jpg" alt="First slide">
                     </div>
                     <div class="item">
-                        <img src="https://i.loli.net/2019/02/18/5c698dd596dac.jpg" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img src="https://i.loli.net/2019/02/18/5c698dd59b734.jpg" alt="Third slide">
+                        <img src="img/me1.jpg" alt="Second slide">
                     </div>
                 </div>
                 
@@ -124,6 +121,35 @@
         
         <!--文章面板-->
         <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a href="docs"><h3 style="margin-top:10px">superset二次开发</h3></a> 
+                </div>
+                <div class="small">
+                    基于superset开源项目做得二次开发
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-3">
+                    <img src="img/supersetchart.jpg" alt="os" class="img-responsive">
+                </div>
+                <div class="col-sm-9" >
+                    <div class="list-group">
+                        <a class="list-group-item" href="docs/superset/#/?id=superset简介">superset简介</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=二次开发已实现的功能">我们做了什么</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=图表使用实践">BI报表实践</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=增加自定义图表">如何增加一个自定义图表</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=技术栈学习了解">二次开发所需的技术栈</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="small text-muted">
+                    更新于2020/06/28 15:44
+                </div>            
+            </div>
+        </div> 
+        <!-- <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="panel-title">
                     <a href="docs"><h3 style="margin-top:10px">操作系统</h3></a> 
@@ -153,7 +179,7 @@
                     更新于2019/2/13 9:44
                 </div>            
             </div>
-        </div>
+        </div> -->
 
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -180,47 +206,13 @@
             </div>
             <div class="panel-footer">
                 <div class="small text-muted">
-                    更新于2019/2/13 10:48
+                    更新于2020/05/01 22:48
                 </div>            
             </div>
-        </div>
+        </div> 
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a href="docs/mao"><h3 style="margin-top:10px">毛泽东思想和中国特色社会主义理论体系概论</h3></a> 
-                </div>
-                <div class="small">
-                    马克思主义中国化的成果
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="col-sm-3">
-                    <img src="https://i.loli.net/2019/02/18/5c698dd49fd19.jpg" alt="毛概" class="img-responsive">
-                </div>
-                <div class="col-sm-9" >
-                    <div class="list-group">
-                        <a class="list-group-item" href="docs/mao/#/?id=第一章">第一章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第二章">第二章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第三章">第三章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第四章">第四章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第五章">第五章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第六章">第六章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第七章">第七章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第八章">第八章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第九章">第九章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第十章">第十章</a>
-                        <a class="list-group-item" href="docs/mao/#/?id=第十四章">第十四章</a>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div class="small text-muted">
-                    更新于2019/2/16 18:36
-                </div>            
-            </div>
-        </div>
-		
+      
+<!-- 		
 		<div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="panel-title">
@@ -248,12 +240,35 @@
                     更新于2019/4/1 18:54
                 </div>            
             </div>
+        </div> -->
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a href="weather.html"><h3 style="margin-top:10px">天气查询</h3></a> 
+                </div>
+                <div class="small">
+                    
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-9" >
+                    
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="small text-muted">
+                    --
+                </div>            
+            </div>
         </div>
         
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="panel-title">
-                    <a href="html/probability.html"><h3 style="margin-top:10px">概率论与数理统计</h3></a> 
+                    <a href="weather.html"><h3 style="margin-top:10px">天气查询</h3></a> 
                 </div>
                 <div class="small">
                     
@@ -268,107 +283,12 @@
             </div>
             <div class="panel-footer">
                 <div class="small text-muted">
-                    更新于2019/9/25 15:40
+                    --
                 </div>            
             </div>
         </div>
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a href="html/linear.html"><h3 style="margin-top:10px">线性代数</h3></a> 
-                </div>
-                <div class="small">
-                    
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="col-sm-3">
-                    <!--<img src="https://img2018.cnblogs.com/blog/1320436/201812/1320436-20181229105702368-889287863.png" alt="os" class="img-responsive">-->
-                </div>
-                <div class="col-sm-9" >
-                    
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div class="small text-muted">
-                    更新于2019/9/30 15:12
-                </div>            
-            </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a href="html/network.html"><h3 style="margin-top:10px">计算机网络</h3></a> 
-                </div>
-                <div class="small">
-                    
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="col-sm-3">
-                    <!--<img src="https://img2018.cnblogs.com/blog/1320436/201812/1320436-20181229105702368-889287863.png" alt="os" class="img-responsive">-->
-                </div>
-                <div class="col-sm-9" >
-                    
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div class="small text-muted">
-                    更新于2020/2/29 10:54
-                </div>            
-            </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a href="timelist.html"><h3 style="margin-top:10px">技术发展史</h3></a> 
-                </div>
-                <div class="small">
-                    
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="col-sm-3">
-                    <!--<img src="https://img2018.cnblogs.com/blog/1320436/201812/1320436-20181229105702368-889287863.png" alt="os" class="img-responsive">-->
-                </div>
-                <div class="col-sm-9" >
-                    
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div class="small text-muted">
-                    更新于2020/3/22 20:35
-                </div>            
-            </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a href="airquality.html"><h3 style="margin-top:10px">空气质量查询</h3></a> 
-                </div>
-                <div class="small">
-                    
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="col-sm-3">
-                    <!--<img src="https://img2018.cnblogs.com/blog/1320436/201812/1320436-20181229105702368-889287863.png" alt="os" class="img-responsive">-->
-                </div>
-                <div class="col-sm-9" >
-                    
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div class="small text-muted">
-                    更新于2020/3/23 12:53
-                </div>            
-            </div>
-        </div>
-
+       
         <!--页码栏-->
         <div class="text-center">
             <ul class="pagination">
@@ -392,23 +312,23 @@
                             <h4>微信公众号</h4>
                         </div>
                         <div class="list-group-item-text">
-                            程艺的编程之路
+                            长时间不更新已经注销。。
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="list-group-item-heading">
-                            <h4>动态博客</h4>
+                            <h4>知乎账号</h4>
                         </div>
                         <div class="list-group-item-text">
-                            <a href="http://neusoftware.top/solo">程艺的个人博客</a>
+                            <a href="https://www.zhihu.com/people/songrenpu">松仁普</a>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="list-group-item-heading">
-                            <h4>黑客派账号</h4>
+                            <h4>v2ex账号</h4>
                         </div>
                         <div class="list-group-item-text">
-                            <a href="https://hacpai.com/member/aopstudio">aopstudio</a> 
+                            <a href="https://v2ex.com/member/purensong">purensong</a> 
                         </div>
                     </div>
                     <div class="list-group-item">
@@ -416,50 +336,33 @@
                             <h4>Bilibili账号</h4>
                         </div>
                         <div class="list-group-item-text">
-                            <a href="https://space.bilibili.com/14938115">微软索尼任天堂</a>
+                            <a href="https://space.bilibili.com/474513616">饿了么骑手邓紫棋</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3"></div>
             <div class="col-sm-4 text-center">
-                <img src="https://i.loli.net/2019/02/18/5c698ec879b75.jpg" alt="weixin" class="img-responsive">
+                <img src="img/weixin.jpg" alt="weixin" class="img-responsive">
                 
             </div>
         </footer>
-        <!--
-        <div class="footer-wrap">
-            <div class="footer w1000">
-                <div class="qrcode">
-                    <img src="res/img/blog.png" style="width:200px">
-                </div>
-                <div class="practice-mode">
-                    <div class="text">
-                        <h4 class="title">我的联系方式</h4>
-                        <p>微信公众号<span class="WeChat">程艺的编程之路</span></p>
-                        <p>动态博客<span class="email"><a href="http://neusoftware.top/solo">程艺的个人博客</a></span></p>
-                        <p>黑客派账号<span class="hacpai">aopstudio</span></p>
-                        <p>Bilibili账号<span class="bilibili">微软索尼任天堂</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
+     
     </div>
 
     <!--gitalk container-->
     <div class="container">
         <div id="gitalk-container"></div>
         <script>
-             const gitalk = new Gitalk({
-				clientID: '9a47c88d3b8845187eb2',
-				clientSecret: 'e1bafb57a55d02227cbea3129e5a63e4db30b2ae',
-				repo: 'prs1022',
-				owner: 'prs1022',
-				admin: ['prs1022'],
-				// facebook-like distraction free mode
-				distractionFreeMode: false
-			  })
+             var gitalk = new Gitalk({
+                clientID: '7227f9901368e1444dc9',
+                clientSecret: 'f578f2ba2e798a26e5ba7956aa61b0d077ae96ee',
+                repo: 'Notes',
+                owner: 'prs1022',//github用户名
+                admin: ['prs1022'],//github用户名
+                labels: ['gittalk'],
+                perPage: 50,
+            })
             gitalk.render('gitalk-container')
         </script>
     </div>
