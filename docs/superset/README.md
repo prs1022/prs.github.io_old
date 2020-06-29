@@ -140,7 +140,7 @@ chart.pie.dispatch.on('elementClick',function(ele){clicked(ele,uid)})
 ```
 饼图演示
 <br/>
-![cc](img/pie.gif)
+![cc](img/pie2.gif)
 
 ps:下钻的时候tips没有及时消失，添加图表点击事件，让tip消失。
 
