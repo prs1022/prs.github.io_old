@@ -142,8 +142,7 @@ chart.pie.dispatch.on('elementClick',function(ele){clicked(ele,uid)})
 <br/>
 ![cc](img/pie.gif)
 
-ps:添加图表点击事件，让tip消失。这里还没改过来。
-
+ps:下钻的时候tips没有及时消失，添加图表点击事件，让tip消失。
 
 # 图表使用实践
 
