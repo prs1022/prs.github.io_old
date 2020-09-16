@@ -56,6 +56,16 @@ npm run dev-server
 - 可以自由配置上钻下卷的链条
 - 图表下钻，支持多级下钻
 - 图表上卷，支持多级上卷
+- 图表联动，在对一张图表配置了联动后，类似下钻的点击会影响到其他图表
+
+
+## v3.0
+- 给FilterBox新增级联属性，支持类似‘省份-区域-城市’这样的层级筛选
+- 添加统一登录，接入ldap账号体系内部实现无差别登陆，默认为普通用户权限
+
+## v4.0
+- 添加集成多个dashboard的门户层，根据层级菜单将多个dashboard加进来
+
 
 # 源码改动处
 
@@ -209,6 +219,28 @@ TopBarChartPlugin -> ReactTopBar -> transformProps -> TOpBar
 
 
 # 技术栈学习了解
+```text
+\star python flask框架
+- 熟悉Flask—login组件
+```
+
+```text
+\star 常用ES6 语法
+[语法传送门](https://www.jianshu.com/p/c827598cd8b7)
+```
+
+```text
+\star react语言熟悉,了解React的html与js混用的写法，了解组件，了解react的生命周期
+[react入门](http://www.ruanyifeng.com/blog/2015/03/react.html)
+
+摘出几句敲黑板的话，加深一下理解：
+1、HTML 语言直接写在 JavaScript 语言之中，不加任何引号，这就是 JSX 的语法，它允许 HTML 与 JavaScript 的混写
+2、React 允许将代码封装成组件（component），然后像插入普通 HTML 标签一样，在网页中插入这个组件。
+3、组件并不是真实的 DOM 节点，而是存在于内存之中的一种数据结构，叫做虚拟 DOM （virtual DOM）只有当它插入文档以后，才会变成真实的 DOM 。根据 React 的设计，所有的 DOM 变动，都先在虚拟 DOM 上发生，然后再将实际发生变动的部分，反映在真实 DOM上，这种算法叫做 DOM diff ，它可以极大提高网页的性能表现。
+4、
+
+
+```
 
 ```tex
 \star  react prop-types 检测类型
