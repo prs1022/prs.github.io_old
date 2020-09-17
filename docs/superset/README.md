@@ -51,6 +51,7 @@ npm run dev-server
 - 增加和具体用户相关联的权限访问，不同用户看到的数据不同
 - 添加数值单位，在原有支持K的基础上增加中文 千,万,亿等
 - 新增两张自定义图表，top Bar （排行榜条形图）和 Mix line Bar （混合柱状条形图）
+- 汉化支持
 
 ## v2.0
 - 可以自由配置上钻下卷的链条
@@ -242,12 +243,12 @@ TopBarChartPlugin -> ReactTopBar -> transformProps -> TOpBar
 
 ```
 
-```tex
+```text
 \star  react prop-types 检测类型
 ```
 
 
-```tex
+```text
 \star  nvd3，编写svg图形代码  
 ```
 对于代码的修改最好先在线平台操作学习，改完即可知道哪里变了
@@ -257,7 +258,7 @@ TopBarChartPlugin -> ReactTopBar -> transformProps -> TOpBar
 [vd3文档](http://nvd3-community.github.io/nvd3/examples/documentation.html)
 
 
-```tex
+```text
 \star  对图表下钻开发, 需要对redux有所了解，需要知道redux的一些概念：
 ```
 [B站学习视频](https://www.bilibili.com/video/BV1Kt411k7Xz?from=search&seid=16472628578011502750)
@@ -323,7 +324,7 @@ store里的dispatch方法关联到组件
 
 
 
-```tex
+```text
 \star 在react项目中使用Echarts
 ```
 
