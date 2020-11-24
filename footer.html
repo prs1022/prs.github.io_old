@@ -1,13 +1,10 @@
 <!--gitalk container-->
-<iframe
-    src="/donate/?AliPayQR=/img/glAlipay.JPG&amp;WeChatQR=/img/glWechatPay.JPG&amp;GitHub=null&amp;BTCQR=null&amp;BTCKEY=null&amp;PayPal=null"
-    style="overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;" frameborder="0"
-    scrolling="no"></iframe>
 
 <div class="container">
     <div id="gitalk-container"></div>
     <script>
         var gitalk = new Gitalk({
+            id: decodeURI('{{ page.url }}'),
             clientID: '7227f9901368e1444dc9',
             clientSecret: '74e638e8220c850af5afa3d3fd9868d7f629bd4b',
             repo: 'Notes',
