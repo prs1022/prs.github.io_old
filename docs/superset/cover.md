@@ -5,7 +5,7 @@
 > 基于superset 0.36.0分支开发
 
 * 前端框架：react、typescript
-* UI类库：d3、nvd3、echarts
+* UI类库：d3、nvd3、echarts、antv
 * 后端框架：python、flask、Pandas、SqlAlchemy
 
 superset[GitHub](https://github.com/apache/incubator-superset)
