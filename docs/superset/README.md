@@ -89,6 +89,12 @@ npm run dev-server
 - pivot table合计有误 bugfix
 - 设置pivot table首行冻结
 
+## v6.0
+- 支持多个LDAP配置的域账号登录
+[流程图](https://www.processon.com/view/link/5fd178e6e401fd06ddb78340)
+
+## v7.0
+- 增加bar chart，pie chart的antV图表
 
 # 源码改动处
 
@@ -989,3 +995,16 @@ const CandlestickReact = asyncComponent(() => import(/* webpackChunkName: "Candl
 import ReactEcharts from 'echarts-for-react'
 
 
+- celery 并行分布式框架
+定时发送报表邮件功能用到，celery是python开发的分布式任务调度模块。
+celery本身不包含消息服务，而是利用第三方broker，可以用redis或mq，官方推荐mq。
+我们在superset中用的是redis，只需要简单的配置，然后启动celery即可。
+一些常用的命令如下：
+ celery -A task worker --loglevel=DEBUG -P eventlet
+ > eventlet是在windows系统需要加上的
+
+因为启动都是命令行查看，这里推荐一个监控工具flower，
+安装非常简单pip install flower，
+启动命令
+在启动celery后执行
+celery flower --address=0.0.0.0 --port=5555 --broker=redis://localhost:6379/1
