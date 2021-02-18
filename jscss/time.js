@@ -1,13 +1,13 @@
 function showTime() { 
 	var currentDate = new Date(); 
-	var startDate = new Date(2021, 2,09);
+	var startDate = new Date(2021, 02,09);
 	var date3 = currentDate-startDate;
 	var days=Math.floor(date3/(24*3600*1000));
-	var leave1=date3%(24*3600*1000);     //¼ÆËãÌìÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave1=date3%(24*3600*1000);     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½
 	var hours=Math.floor(leave1/(3600*1000));
-	var leave2=leave1%(3600*1000);        //¼ÆËãĞ¡Ê±ÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave2=leave1%(3600*1000);        //ï¿½ï¿½ï¿½ï¿½Ğ¡Ê±ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½
 	var minutes=Math.floor(leave2/(60*1000));
-	var leave3=leave2%(60*1000);          //¼ÆËã·ÖÖÓÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave3=leave2%(60*1000);          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½
 	var seconds=Math.round(leave3/1000);
 	if (minutes < 10) 
 	minutes = "0" + minutes; 
@@ -23,6 +23,6 @@ function showTime() {
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Miss u ,Love u<br>"
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"
 		+	"<c style=\"color: #CCCCCC; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:20px\" >----Song   2021-02-18</c>"; 
-	document.getElementById("show").innerHTML=currentTimeString;  //¸ÄÕâµØ·½
+	document.getElementById("show").innerHTML=currentTimeString;  //ï¿½ï¿½ï¿½ï¿½Ø·ï¿½
 	window.setTimeout("showTime()", 1000); 
 } 
