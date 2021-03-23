@@ -1,104 +1,229 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>爱芝芝</title>
-		<meta name="author" content="Mike">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="./jscss/style.css" type="text/css" media="all">
-		<!--导库-->
-		<script type="text/javascript" src="./jscss/jquery.js"></script>
-		<!-- 图片幻灯片效果-->
-		<script type="text/javascript" src="./jscss/roundabout.js"></script>
-		<script type="text/javascript" src="./jscss/roundabout_shapes.js"></script>
-		<script type="text/javascript" src="./jscss/gallery_init.js"></script>
-		<!-- 下雪-->
-		<script type="text/javascript" src="./jscss/snowstorm.js"></script>
-		<!-- 打字机效果-->		
-		<script type="text/javascript" src="./jscss/text.js"></script>
-		<!-- 画爱心-->
-		<script type="text/javascript" src="./jscss/ga.js" async=""></script>
-		<script type="text/javascript" src="./jscss/heart.js"></script>
-		<!-- 移动div-->
-		<script type="text/javascript" src="./jscss/move.js"></script>
-		<!-- 显示时间 -->
-		<script type="text/javascript" src="./jscss/time.js"></script>
-		<!-- 设置文字跟随鼠标 -->
-		<script type="text/javascript" src="./jscss/makesnake.js"></script></head><body>
-		<!-- thanks for watching! -->
-		<span id="span0" class="spanstyle">我</span><span id="span1" class="spanstyle">好</span>
-		<span id="span2" class="spanstyle">想</span><span id="span3" class="spanstyle"> </span>
-		<span id="span4" class="spanstyle"> </span><span id="span5" class="spanstyle"> 好</span><span id="span6" class="spanstyle">
-		 </span><span id="span7" class="spanstyle">想</span><span id="span8" class="spanstyle"> </span><span id="span9" class="spanstyle">芝</span>
-		 <span id="span10" class="spanstyle"> </span><span id="span11" class="spanstyle">芝</span>
- 
- 
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>键盘侠</title>
+
+    <!--缩略图引用-->
+    <link href="https://img.hacpai.com/avatar/1544098952164?imageView2/1/w/242/h/242/interlace/0/q" rel="SHORTCUT ICON">
+
+    <!--css引用-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mysite.css">
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="css/night.css" id="dayornight">
+	<link rel="stylesheet" type="text/css" href="css/waifu.css"/>
+    <!--js引用-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.1.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="js/dayornight.js"></script>
+    <script src="js/setdon.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1.0.0/index.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?fce9bdfb35236a9dd38bf99f7bc540b6";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+</head>
+<body>
+    <header class="headerpage"></header>
+    
+    <div class="container">
+        <!--页首图 -->
+        <div class="jumbotron text-center" style="margin-top: 70px; padding: 0">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/sh.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/sh2.jpg" width="3968px" height="1584px" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/sh3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!--面包屑导航栏-->
+        <ul class="breadcrumb">
+            <li class="active">首页</li>
+        </ul>
+
+        
+        <!--文章面板 begin-->  
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a href="docs/superset/"><h3 style="margin-top:10px">superset二次开发</h3></a> 
+                </div>
+                <div class="small">
+                    基于superset开源项目做得二次开发
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-3">
+                    <img src="img/supersetchart.jpg" alt="os" class="img-responsive">
+                </div>
+                <div class="col-sm-9" >
+                    <div class="list-group">
+                        <a class="list-group-item" href="docs/superset/#/?id=superset简介">superset简介</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=二次开发已实现的功能">我们做了什么</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=图表使用实践">BI报表实践</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=增加自定义图表">如何增加一个自定义图表</a>
+                        <a class="list-group-item" href="docs/superset/#/?id=技术栈学习了解">二次开发所需的技术栈</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="small text-muted">
+                    更新于2020/11/25 15:44
+                </div>            
+            </div>
+        </div>
+        
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a href="docs/datalink/"><h3 style="margin-top:10px">datalink数据查询平台</h3></a> 
+                </div>
+                <div class="small">
+                    一款BI工具，通过拖拽维度、度量的方式查询数据
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-3">
+                    <img src="img/datalink.png" alt="os" class="img-responsive">
+                </div>
+                <div class="col-sm-9" >
+                    <div class="list-group">
+                        <a class="list-group-item" href="docs/datalink/#/?id=datalink简介">简介</a>
+                        <a class="list-group-item" href="docs/datalink/#/?id=查询流程">流程设计</a>
+                        <a class="list-group-item" href="docs/datalink/#/?id=问题">问题</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="small text-muted">
+                    更新于2020/11/25 14:14
+                </div>            
+            </div>
+        </div>
+       
+        
+        
 	
+        <!--文章面板 end-->
+        
+        
+        
+        <!--页码栏-->
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="/">1</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+        </div>
 
-	
-		<script type="text/javascript">
-			setTimeout(makesnake, 42000);
-		</script>
-		<!--#Header-->
-		<div id="header" style="opacity:0.85">
-			<div id="title">
-				爱芝芝
-			</div>
-		</div>
+        <!--个人信息 begin-->
+        <footer>
+            
+            <div class="col-sm-5" style="padding-left:0">
+                
+                <div class="list-group">
+                    <div class="list-group-item active">
+                        <h4 class="title">我的联系方式</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="list-group-item-heading">
+                            <h4>微信公众号</h4>
+                        </div>
+                        <div class="list-group-item-text">
+                            松仁君
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="list-group-item-heading">
+                            <h4>知乎账号</h4>
+                        </div>
+                        <div class="list-group-item-text">
+                            <a href="https://www.zhihu.com/people/songrenpu">松仁普</a>
+                        </div>
+                    </div>
+                    <!-- <div class="list-group-item">
+                        <div class="list-group-item-heading">
+                            <h4>微博</h4>
+                        </div>
+                        <div class="list-group-item-text">
+                            <a href="https://weibo.com/p/1005053789367694/home?from=page_100505&mod=TAB&is_all=1#place">普小小松</a> 
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="list-group-item-heading">
+                            <h4>Bilibili账号</h4>
+                        </div>
+                        <div class="list-group-item-text">
+                            <a href="https://space.bilibili.com/474513616">松哥亡命天涯</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-4 text-center">
+                <img src="img/weixin.jpg" style="height: 370px;" alt="weixin" class="img-responsive">
+            </div>
+        </footer>
 
-		<!-- #myContent -->
-		<div id="myContent">
-				<span id="blink" style="display: none;">_</span></div>
-		<div id="contentToWrite" style="display:none">
-			一时间不知道从哪说起,         <br>
-				真爱来了，我们要好好把握    <br>
-				不管面临多大的压力,         <br>
-				不管前面的路如何崎岖, <br>
-				不管经历过什么,<br>
-				我仍坚信最浪漫的事就是和 <br>
-				你在一起的每分每秒.  <br>
-				还记得否,<br>
-				第一次见面你总夹肉给我吃，<br>
-				是一个很可爱的女孩，<br>
-				正月初的几晚聊到夜里，<br>
-				满脑子想的都是你，<br>
-				一生守候不是一句简单而苍白的山盟海誓，<br>
-				而是无数个平淡的日子同舟共济，相濡以沫.<br>
-				芝芝 <br>
-				我喜欢你~ <br>
-				<br>
-				-----------------------Just for You, Song<br>
-		</div>
-		<script type="text/javascript">
-			writeContent(true);
-		</script>
-		
+        <!--个人信息  end-->
+     
+        
+    </div>
 
-		<!-- #container -->
-		<div id="container">
-			<ul id="myRoundabout" class="roundabout-holder" style="padding: 0px; position: relative; z-index: 100;">
-		  	<li class="roundabout-moveable-item roundabout-in-focus" current-scale="1.0000" style="position: absolute; left: 122px; top: 87px; width: 350px; height: 222px; opacity: 1; z-index: 400; font-size: 16px;"><img src="./jscss/1.jpg" alt=""></li>
-			<li class="roundabout-moveable-item" current-scale="0.7927" style="position: absolute; left: -0.4px; top: 110px; width: 277.445px; height: 175.9794px; opacity: 1; z-index: 296; font-size: 12.68px;"><img src="./jscss/2.jpg" alt=""></li>
-			<li class="roundabout-moveable-item" current-scale="0.4573" style="position: absolute; left: 473.8px; top: 147.2px; width: 160.055px; height: 101.5206px; opacity: 1; z-index: 129; font-size: 7.32px;"><img src="./jscss/3.jpg" alt=""></li>
-			<li class="roundabout-moveable-item" current-scale="0.4573" style="position: absolute; left: -39.8px; top: 147.2px; width: 160.055px; height: 101.5206px; opacity: 1; z-index: 129; font-size: 7.32px;"><img src="./jscss/4.jpg" alt=""></li>
-			<li class="roundabout-moveable-item" current-scale="0.7927" style="position: absolute; left: 317px; top: 110px; width: 277.445px; height: 175.9794px; opacity: 1; z-index: 296; font-size: 12.68px;"><img src="./jscss/5.jpg" alt=""></li>
-		  </ul>
-		</div>
-		<script type="text/javascript">
-			setTimeout(move, 15000);
-		</script>
-  		
-  		<!-- #bg -->
-		<div id="bg">
-			<canvas id="garden" width="1583" height="709"><c style="color: #FFF; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:50px">你的浏览器过时了,试试火狐吧!</c></canvas>
-		</div>
+    <footer class="footerpage"></footer>
 
-		<!-- #time -->
-		<div id="time">
-			<span id="show"></span>
-			<script type="text/javascript">
-				setTimeout("showTime()", 10000);
-			</script>
-		</div>
-
-	
-	
-
+    <script>
+        window.$docsify = {
+             plugins: [
+                // change to your Carbon property id
+                    DocsifyCarbon.create('CE7I52QU', 'xmakeio')
+                ]
+            }
+         $(function() {
+                /*公共部分
+                 * 导航栏
+                 * footer CopyRight
+                 */
+                $(".headerpage").load("header.html");
+                $(".footerpage").load("footer.html");
+            });
+    </script>
 </body>
+</html>
